@@ -8,8 +8,7 @@ const progressBarFull = document.getElementById('progressBarFull');
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
+let questionCounter = 1;
 let questions = [
     {
         "category": "General Knowledge",
@@ -253,6 +252,12 @@ let questions = [
     }
 ];
 
+startGame = () => {
+    score = 0;
+    progressText.textContent = `Question ${questionCounter}/10`;
+    runGame();
+}
+
 runGame = () => {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 
@@ -261,9 +266,35 @@ runGame = () => {
     rightAnswer.textContent = currentQuestion.correct_answer;
     choices.pop(rightAnswer);
 
-    for (i = 0; i < choices.length; i++) {
+    for (i = 0; i <= choices.length; i++) {
         choices[i].textContent = currentQuestion.incorrect_answers[i];
     }
+
+    rightAnswer.addEventListener('click', correctAnswer());
+    choices.addEventListener('click', wrongAnswer());
+
+    questions.pop(currentQuestion);
 };
 
-runGame();
+correctAnswer = () => {
+    rightAnswer.parentElement.classList.add('correct');
+    setTimeout(() => {
+        rightAnswer.parentElement.classList.remove('correct');
+        getNewQuestion();
+        }, 1000)
+}
+
+wrongAnswer = () => {
+    rightAnswer.parentElement.classList.add('incorrect');
+    setTimeout(() => {
+        choices.parentElement.classList.remove('incorrect');
+        getNewQuestion();
+        }, 1000)
+}
+
+getNewQuestion = () => {
+    questionCounter++;
+    
+}
+
+startGame();
