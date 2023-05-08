@@ -86,3 +86,11 @@ h1 {
     font-weight: 800;
     padding: 2rem;
 }
+
+.correct {
+    background-color: #4F9D69;
+}
+
+.incorrect {
+    background-color: #ff5400;
+}
