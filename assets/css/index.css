@@ -55,6 +55,10 @@ h1 {
 
 /* QUESTION */
 
+#question {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
 
 
 /* CHOICES */
