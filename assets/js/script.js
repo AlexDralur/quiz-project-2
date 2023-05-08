@@ -273,6 +273,10 @@ runGame = () => {
     rightAnswer.addEventListener('click', correctAnswer());
     choices.addEventListener('click', wrongAnswer());
 
+    if (correcAnswer() == 'true'){
+        score++;
+    }
+
     questions.pop(currentQuestion);
 };
 
@@ -294,7 +298,7 @@ wrongAnswer = () => {
 
 getNewQuestion = () => {
     questionCounter++;
-    
+    runGame();
 }
 
 startGame();

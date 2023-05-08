@@ -52,3 +52,33 @@ h1 {
     color: #fff;
     background-color: #4F9D69;
 }
+
+/* QUESTION */
+
+
+
+/* CHOICES */
+
+.choice-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+}
+
+.choice-prefix {
+    background-color: #BEE6CE;
+    width: 5rem;
+    height: 5rem;
+    color: #333;
+    font-weight: 800;
+    padding: 2rem;
+}
+
+.choice-text {
+    background-color: #fff;
+    width: 20rem;
+    height: 5rem;
+    color: #333;
+    font-weight: 800;
+    padding: 2rem;
+}
