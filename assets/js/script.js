@@ -261,18 +261,14 @@ runGame = () => {
     currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 
     question.innerHTML = currentQuestion.question;
-    const rightAnswer = choices[Math.floor(Math.random() * choices.length)];
-    rightAnswer.textContent = currentQuestion.correct_answer;
-    choices.pop(rightAnswer);
+    let answers = currentQuestion.incorrect_answers;
+    let correctAnswer = currentQuestion.correct_answer;
+    answers.push(correctAnswer);
 
     for (i = 0; i <= choices.length; i++) {
-        choices[i].textContent = currentQuestion.incorrect_answers[i];
+        choices[i].innerHTML = answers[i];
     }
-
-    // if (correctAnswer() == 'true'){
-    //     score++;
-    // }
-
+    
     questions.pop(currentQuestion);
 };
 
