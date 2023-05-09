@@ -69,13 +69,14 @@ header{
     display: flex;
     justify-content: space-around;
     width: inherit;
+    text-align: center;
 }
 
 /* QUESTION */
 
 #question {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin: 2rem 10rem 3rem;
+    text-align: center;
 }
 
 
