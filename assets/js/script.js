@@ -270,35 +270,39 @@ runGame = () => {
         choices[i].textContent = currentQuestion.incorrect_answers[i];
     }
 
-    rightAnswer.addEventListener('click', correctAnswer());
-    choices.addEventListener('click', wrongAnswer());
-
-    if (correcAnswer() == 'true'){
-        score++;
-    }
+    // if (correctAnswer() == 'true'){
+    //     score++;
+    // }
 
     questions.pop(currentQuestion);
 };
 
-correctAnswer = () => {
-    rightAnswer.parentElement.classList.add('correct');
-    setTimeout(() => {
-        rightAnswer.parentElement.classList.remove('correct');
-        getNewQuestion();
-        }, 1000)
-}
+checkAnswer = () => {
+    for (i = 0; i < choices.length; i++){
+        if (choices[i] === currentQuestion.correctAnswer){
+            choices[i].parentElement.classList.add('correct');
 
-wrongAnswer = () => {
-    rightAnswer.parentElement.classList.add('incorrect');
-    setTimeout(() => {
-        choices.parentElement.classList.remove('incorrect');
-        getNewQuestion();
-        }, 1000)
-}
+            setTimeout(() => {
+                choices[i].parentElement.classList.remove('correct');
+                getNewQuestion();
+                }, 1000)
+        } else {    
+            choices[i].parentElement.classList.add('incorrect');
+            
+            setTimeout(() => {
+            choices.parentElement.classList.remove('incorrect');
+            getNewQuestion();
+            }, 1000)
+
+        }
+    }
+};
 
 getNewQuestion = () => {
     questionCounter++;
     runGame();
 }
+
+choices.addEventListener('click', checkAnswer);
 
 startGame();
