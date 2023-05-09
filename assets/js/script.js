@@ -264,7 +264,7 @@ runGame = () => {
     question.innerHTML = currentQuestion.question;
     const rightAnswer = choices[Math.floor(Math.random() * choices.length)];
     rightAnswer.textContent = currentQuestion.correct_answer;
-    choices.pop(rightAnswer);
+    // choices.pop(rightAnswer);
 
     for (i = 0; i <= choices.length; i++) {
         choices[i].textContent = currentQuestion.incorrect_answers[i];
@@ -277,26 +277,50 @@ runGame = () => {
     questions.pop(currentQuestion);
 };
 
-checkAnswer = () => {
-    for (i = 0; i < choices.length; i++){
-        if (choices[i] === currentQuestion.correctAnswer){
-            choices[i].parentElement.classList.add('correct');
+// checkAnswer = () => {
+    
+//     for (i = 0; i < choices.length; i++){
+//         if (choices[i] === currentQuestion.correctAnswer){
+//             choices[i].parentElement.classList.add('correct');
 
-            setTimeout(() => {
-                choices[i].parentElement.classList.remove('correct');
-                getNewQuestion();
-                }, 1000)
-        } else {    
-            choices[i].parentElement.classList.add('incorrect');
+//             setTimeout(() => {
+//                 choices[i].parentElement.classList.remove('correct');
+//                 getNewQuestion();
+//                 }, 1000)
+//         } else {    
+//             choices[i].parentElement.classList.add('incorrect');
             
-            setTimeout(() => {
-            choices.parentElement.classList.remove('incorrect');
-            getNewQuestion();
-            }, 1000)
+//             setTimeout(() => {
+//             choices.parentElement.classList.remove('incorrect');
+//             getNewQuestion();
+//             }, 1000)
 
-        }
-    }
-};
+//         }
+//     }
+// };
+
+// choices.forEach ( choice => {
+//     choice.addEventListener('click', e => {
+//         if(!acceptingAnswers) return;
+
+//         acceptingAnswers = false;
+//         const selectedChoice = e.target;
+//         const selectedAnswer = selectedChoice.dataset['number'];
+
+//         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+//         if(classToApply === 'correct') {
+//             incrementScore(CORRECT_BONUS);
+//         }
+//         selectedChoice.parentElement.classList.add(classToApply);
+
+//         setTimeout(() => {
+//         selectedChoice.parentElement.classList.remove(classToApply);
+//         getNewQuestion();
+//         }, 1000)
+
+//     });
+// });
 
 getNewQuestion = () => {
     questionCounter++;

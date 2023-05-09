@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 :root {
-    background-color: #8DFFCD;
     font-size: 62.5%;
 }
 
@@ -9,13 +8,21 @@
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff;
 }
 
 h1 {
     font-family: 'Mukta', sans-serif;
     font-weight: 800;
     font-size: 4rem;
+}
+
+/* INDEX PAGE */
+
+header{
+    background: url('../images/question_pattern.jpg') center no-repeat no-repeat;
+    background-size: cover;
+    /* <a href="https://www.freepik.com/free-vector/mystery-confusion-question-mark-background-liquid-style_38091790.htm#page=3&query=quiz%20pattern&position=15&from_view=search&track=ais">Image by starline</a> on Freepik */
 }
 
 .container {
@@ -28,6 +35,7 @@ h1 {
     margin: 0 auto;
     padding: 2rem;
     flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 .container > * {
@@ -46,11 +54,11 @@ h1 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #BCFFDB;
+    border: 0.1rem solid #fff;
     margin-bottom: 2rem;
     text-decoration: none;
     color: #fff;
-    background-color: #4F9D69;
+    background-color: #000;
 }
 
 /* QUESTION */
