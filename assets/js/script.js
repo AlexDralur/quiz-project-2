@@ -1,5 +1,4 @@
-const question = document.getElementById(
-'question');
+const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
@@ -264,7 +263,7 @@ runGame = () => {
     question.innerHTML = currentQuestion.question;
     const rightAnswer = choices[Math.floor(Math.random() * choices.length)];
     rightAnswer.textContent = currentQuestion.correct_answer;
-    // choices.pop(rightAnswer);
+    choices.pop(rightAnswer);
 
     for (i = 0; i <= choices.length; i++) {
         choices[i].textContent = currentQuestion.incorrect_answers[i];
@@ -327,6 +326,6 @@ getNewQuestion = () => {
     runGame();
 }
 
-choices.addEventListener('click', checkAnswer);
+// choices.addEventListener('click', checkAnswer);
 
 startGame();
