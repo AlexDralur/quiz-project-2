@@ -267,12 +267,24 @@ runGame = () => {
     let correctAnswer = currentQuestion.correct_answer;
     answers.push(correctAnswer);
 
+    answers = shuffleArray(answers);
+
     for (i = 0; i <= choices.length; i++) {
         choices[i].innerHTML = answers[i];
     }
 
-    questions.pop(currentQuestion);
+    questions.slice(index, 1);
 };
+
+// Fisher Yates Shuffle
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 
 checkAnswer = () => {
     
