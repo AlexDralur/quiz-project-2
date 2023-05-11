@@ -269,7 +269,7 @@ runGame = () => {
 
     answers = shuffleArray(answers);
 
-    for (i = 0; i <= choices.length; i++) {
+    for (i = 0; i < choices.length; i++) {
         choices[i].innerHTML = answers[i];
     }
 
@@ -285,57 +285,24 @@ function shuffleArray(array) {
     return array;
 }
 
+for (let button of choiceOptions) {
+    button.addEventListener('click', function() {
+        let selectedAnswer = this.querySelector('.choice-text').innerHTML;
+        checkAnswer(selectedAnswer);
+    })
+}
 
-checkAnswer = () => {
-    
-    for (i = 0; i < choices.length; i++){
-        if (choices[i] === currentQuestion.correctAnswer){
-            choices[i].parentElement.classList.add('correct');
-
-            setTimeout(() => {
-                choices[i].parentElement.classList.remove('correct');
-                getNewQuestion();
-                }, 1000)
-        } else {    
-            choices[i].parentElement.classList.add('incorrect');
-            
-            setTimeout(() => {
-            choices.parentElement.classList.remove('incorrect');
-            getNewQuestion();
-            }, 1000)
-
-        }
+function checkAnswer(answer) {
+    if (answer = currentQuestion.correct_answer){
+        console.log('correct');
+    } else {
+        console.log('incorrect');
     }
-};
+}
 
-// choices.forEach ( choice => {
-//     choice.addEventListener('click', e => {
-//         if(!acceptingAnswers) return;
-
-//         acceptingAnswers = false;
-//         const selectedChoice = e.target;
-//         const selectedAnswer = selectedChoice.dataset['number'];
-
-//         const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
-//         if(classToApply === 'correct') {
-//             incrementScore(CORRECT_BONUS);
-//         }
-//         selectedChoice.parentElement.classList.add(classToApply);
-
-//         setTimeout(() => {
-//         selectedChoice.parentElement.classList.remove(classToApply);
-//         getNewQuestion();
-//         }, 1000)
-
-//     });
-// });
-
-getNewQuestion = () => {
+function getNewQuestion() {
     questionCounter++;
     runGame();
 }
-
-// choices.addEventListener('click', checkAnswer);
 
 startGame();
