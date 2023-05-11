@@ -263,7 +263,7 @@ runGame = () => {
     currentQuestion = questions[index];
 
     question.innerHTML = currentQuestion.question;
-    let answers = currentQuestion.incorrect_answers;
+    let answers = [...currentQuestion.incorrect_answers];
     let correctAnswer = currentQuestion.correct_answer;
     answers.push(correctAnswer);
 
