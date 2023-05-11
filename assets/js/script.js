@@ -252,13 +252,13 @@ let questions = [
     }
 ];
 
-startGame = () => {
+function startGame() {
     score = 0;
     progressText.textContent = `Question ${questionCounter}/10`;
     runGame();
 }
 
-runGame = () => {
+function runGame() {
     const index = Math.floor(Math.random() * questions.length);
     currentQuestion = questions[index];
 
@@ -293,15 +293,16 @@ for (let button of choiceOptions) {
 }
 
 function checkAnswer(answer) {
-    if (answer = currentQuestion.correct_answer){
+    if (answer === currentQuestion.correct_answer){
         console.log('correct');
     } else {
         console.log('incorrect');
     }
+    getNewQuestion();
 }
 
 function getNewQuestion() {
-    questionCounter++;
+    questionCounter += 1;
     runGame();
 }
 
