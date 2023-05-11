@@ -259,7 +259,8 @@ startGame = () => {
 }
 
 runGame = () => {
-    currentQuestion = questions[Math.floor(Math.random() * questions.length)];
+    const index = Math.floor(Math.random() * questions.length);
+    currentQuestion = questions[index];
 
     question.innerHTML = currentQuestion.question;
     let answers = currentQuestion.incorrect_answers;
