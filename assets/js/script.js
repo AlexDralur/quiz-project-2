@@ -1,5 +1,6 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const choiceOptions = document.getElementsByClassName('choice-container');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
@@ -268,31 +269,31 @@ runGame = () => {
     for (i = 0; i <= choices.length; i++) {
         choices[i].innerHTML = answers[i];
     }
-    
+
     questions.pop(currentQuestion);
 };
 
-// checkAnswer = () => {
+checkAnswer = () => {
     
-//     for (i = 0; i < choices.length; i++){
-//         if (choices[i] === currentQuestion.correctAnswer){
-//             choices[i].parentElement.classList.add('correct');
+    for (i = 0; i < choices.length; i++){
+        if (choices[i] === currentQuestion.correctAnswer){
+            choices[i].parentElement.classList.add('correct');
 
-//             setTimeout(() => {
-//                 choices[i].parentElement.classList.remove('correct');
-//                 getNewQuestion();
-//                 }, 1000)
-//         } else {    
-//             choices[i].parentElement.classList.add('incorrect');
+            setTimeout(() => {
+                choices[i].parentElement.classList.remove('correct');
+                getNewQuestion();
+                }, 1000)
+        } else {    
+            choices[i].parentElement.classList.add('incorrect');
             
-//             setTimeout(() => {
-//             choices.parentElement.classList.remove('incorrect');
-//             getNewQuestion();
-//             }, 1000)
+            setTimeout(() => {
+            choices.parentElement.classList.remove('incorrect');
+            getNewQuestion();
+            }, 1000)
 
-//         }
-//     }
-// };
+        }
+    }
+};
 
 // choices.forEach ( choice => {
 //     choice.addEventListener('click', e => {
