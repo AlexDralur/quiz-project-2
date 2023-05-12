@@ -259,6 +259,7 @@ function startGame() {
 }
 
 function runGame() {
+    progressText.textContent = `Question ${questionCounter}/10`;
     const index = Math.floor(Math.random() * questions.length);
     currentQuestion = questions[index];
 
@@ -298,12 +299,13 @@ function checkAnswer(answer) {
     } else {
         console.log('incorrect');
     }
+    questionCounter++;
+    console.log(questionCounter);
     getNewQuestion();
 }
 
 function getNewQuestion() {
-    questionCounter += 1;
-    runGame();
+        runGame();
 }
 
 startGame();
