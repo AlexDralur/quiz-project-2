@@ -48,6 +48,20 @@ header{
     align-items: center;
 }
 
+#progressBar {
+    margin-top: 1rem;
+    width: 9rem;
+    height: 2rem;
+    border: 0.1rem solid #fff;
+}
+
+#progressBarFull {
+    height: inherit;
+    background-color: #fff;
+}
+
+
+
 /* BUTTONS */
 .btn {
     font-size: 1.8rem;
