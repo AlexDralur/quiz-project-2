@@ -276,7 +276,8 @@ function runGame() {
         choices[i].innerHTML = answers[i];
     }
 
-    questions.slice(index, 1);
+    questions.splice(index, 1);
+    console.log(questions);
 };
 
 // Fisher Yates Shuffle
@@ -301,12 +302,9 @@ function checkAnswer(answer) {
     });
 
     if (answer === currentQuestion.correct_answer) {
-        console.log('correct');
         selectedChoice.querySelector('.choice-text').classList.add('correct');
-        score++;
-        scoreText.textContent = `Score: ${score}`;
+        score += 10;
     } else {
-        console.log('incorrect');
         selectedChoice.querySelector('.choice-text').classList.add('incorrect');
     }
 
@@ -316,8 +314,7 @@ function checkAnswer(answer) {
         if (questionCounter <= 10) {
             runGame();
         } else {
-            // Game Over
-            // You can add your logic here for displaying the final score or ending the game
+
         }
     }, 1000);
 }
