@@ -253,12 +253,12 @@ let questions = [
 ];
 
 function startGame() {
-    score = 0;
     progressText.textContent = `Question ${questionCounter}/10`;
     runGame();
 }
 
 function runGame() {
+    scoreText.textContent = `${score}`;
     progressText.textContent = `Question ${questionCounter}/10`;
     progressBarFull.style.width = `${questionCounter * 10}%`;
 
@@ -277,7 +277,6 @@ function runGame() {
     }
 
     questions.splice(index, 1);
-    console.log(questions);
 };
 
 // Fisher Yates Shuffle
@@ -311,6 +310,7 @@ function checkAnswer(answer) {
     setTimeout(() => {
         selectedChoice.querySelector('.choice-text').classList.remove('correct', 'incorrect');
         questionCounter++;
+
         if (questionCounter <= 10) {
             runGame();
         } else {
