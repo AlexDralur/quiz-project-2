@@ -5,6 +5,7 @@ const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 const entrance = document.getElementById('entrance');
+const gameplay = document.getElementById('gameplay');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
