@@ -21,13 +21,14 @@ h1 {
     display: none;
 }
 
-/* INDEX PAGE */
-
-header{
+body{
     background: url('../images/question_pattern.jpg') center no-repeat no-repeat;
     background-size: cover;
     /* <a href="https://www.freepik.com/free-vector/mystery-confusion-question-mark-background-liquid-style_38091790.htm#page=3&query=quiz%20pattern&position=15&from_view=search&track=ais">Image by starline</a> on Freepik */
 }
+
+/* ENTRANCE PAGE */
+
 
 .container {
     width: 100vw;

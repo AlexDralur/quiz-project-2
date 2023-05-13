@@ -4,6 +4,8 @@ const choiceOptions = document.getElementsByClassName('choice-container');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+const start = document.getElementById('start');
+const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
 
@@ -254,6 +256,12 @@ let questions = [
     }
 ];
 
+function showGame(){
+    entrance.classList.add('hide');
+    gameplay.classList.remove('hide');
+    startGame();
+}
+
 function startGame() {
     progressText.textContent = `Question ${questionCounter}/10`;
     runGame();
@@ -322,4 +330,4 @@ function checkAnswer(answer) {
 }
 
 
-startGame();
+start.addEventListener('click', showGame);
