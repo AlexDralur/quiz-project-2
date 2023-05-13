@@ -296,25 +296,31 @@ for (let button of choiceOptions) {
 }
 
 function checkAnswer(answer) {
-    if (answer === currentQuestion.correct_answer){
+    const selectedChoice = Array.from(choiceOptions).find(function(option) {
+        return option.querySelector('.choice-text').innerHTML === answer;
+    });
+
+    if (answer === currentQuestion.correct_answer) {
         console.log('correct');
-        // this.classList.add('correct');
-
-        // setTimeout(function(){
-        //     this.classList.remove('correct'),
-        // 1000});
-
+        selectedChoice.querySelector('.choice-text').classList.add('correct');
+        score++;
+        scoreText.textContent = `Score: ${score}`;
     } else {
         console.log('incorrect');
-
-        // this.classList.add('incorrect');
-
-        // setTimeout(function() {
-        //     this.classList.remove('incorrect'),
-        // 1000});
+        selectedChoice.querySelector('.choice-text').classList.add('incorrect');
     }
-    questionCounter++;
-    runGame();
+
+    setTimeout(() => {
+        selectedChoice.querySelector('.choice-text').classList.remove('correct', 'incorrect');
+        questionCounter++;
+        if (questionCounter <= 10) {
+            runGame();
+        } else {
+            // Game Over
+            // You can add your logic here for displaying the final score or ending the game
+        }
+    }, 1000);
 }
+
 
 startGame();
