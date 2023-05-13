@@ -4,6 +4,7 @@ const choiceOptions = document.getElementsByClassName('choice-container');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+const entrance = document.getElementById('entrance');
 
 let currentQuestion = {};
 let acceptingAnswers = true;

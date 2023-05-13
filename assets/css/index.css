@@ -17,6 +17,10 @@ h1 {
     font-size: 4rem;
 }
 
+.hide {
+    display: none;
+}
+
 /* INDEX PAGE */
 
 header{
