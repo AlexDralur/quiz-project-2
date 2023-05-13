@@ -298,16 +298,23 @@ for (let button of choiceOptions) {
 function checkAnswer(answer) {
     if (answer === currentQuestion.correct_answer){
         console.log('correct');
+        // this.classList.add('correct');
+
+        // setTimeout(function(){
+        //     this.classList.remove('correct'),
+        // 1000});
+
     } else {
         console.log('incorrect');
+
+        // this.classList.add('incorrect');
+
+        // setTimeout(function() {
+        //     this.classList.remove('incorrect'),
+        // 1000});
     }
     questionCounter++;
-    console.log(questionCounter);
-    getNewQuestion();
-}
-
-function getNewQuestion() {
-        runGame();
+    runGame();
 }
 
 startGame();
