@@ -261,7 +261,7 @@ let questions = [
         ]
     }
 ];
-let topPlayers =[];
+let topPlayers = JSON.parse(localStorage.getItem('highScores')) || [];
 
 function showGame(){
     entrance.classList.add('hide');
@@ -351,31 +351,29 @@ function endGame(){
 }
 
 function addUserScore (event) {
+    event.preventDefault();
+
     let newScore = {
         'name': user.value,
         'email': email.value,
-        'score': score
+        'score': finalScore.textContent
     }
 
     topPlayers.push(newScore);
-    console.log(newScore);
 
+    console.log(topPlayers);
 
-    const list = table.createElement('tbody');
+    // const list = table.createElement('tbody');
 
-    for(player in topPlayers){
-        list.innerHTML = `<tr><td>${player.name}/td><td>${score}</td></tr>`;
-        }
+    // for(player in topPlayers){
+    //     list.innerHTML = `<tr><td>${player.name}/td><td>${score}</td></tr>`;
+    //     }
 
-    event.preventDefault();
+    // event.preventDefault();
 
     
 
 }
-
-user.addEventListener('keyup', function(){
-    console.log(user.value);
-});
 
 start.addEventListener('click', showGame);
 checkScores.addEventListener('click', seeScores);
