@@ -262,6 +262,7 @@ let questions = [
     }
 ];
 let topPlayers = JSON.parse(localStorage.getItem('highScores')) || [];
+const maxTopPlayers = 5;
 
 function showGame(){
     entrance.classList.add('hide');
