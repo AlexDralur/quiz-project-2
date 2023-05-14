@@ -8,6 +8,7 @@ const start = document.getElementById('start');
 const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
+const table = document.getElementsByTagName('table');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -327,6 +328,10 @@ function checkAnswer(answer) {
 
         }
     }, 1000);
+}
+
+function createList () {
+    const list = 
 }
 
 
