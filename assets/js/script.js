@@ -11,6 +11,7 @@ const gameplay = document.getElementById('gameplay');
 const table = document.getElementsByTagName('table');
 const user = document.getElementById('name');
 const email = document.getElementById('email');
+cconst submitScore = document.getElementById('submit-score');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -343,8 +344,9 @@ function addUserScore () {
         'email': email.value
     }
 
+    topPlayers.push(newScore);
 
-    
+
     const list = table.createElement('tbody');
 
     list.innerHTML = `<tr><td>${user.value}/td><td>${email.value}</td></tr>`;
@@ -353,3 +355,4 @@ function addUserScore () {
 
 
 start.addEventListener('click', showGame);
+submitScore.addEventListener('submit', addUserScore);
