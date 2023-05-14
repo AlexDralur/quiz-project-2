@@ -9,6 +9,8 @@ const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
 const table = document.getElementsByTagName('table');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
