@@ -371,11 +371,14 @@ function addUserScore (event) {
 
     const list = document.createElement('tbody');
 
-    for(player in topPlayers){
-        list.innerHTML = `<tr><td>${player.name}/td><td>${player.score}</td></tr>`;
+    for(let player of topPlayers){
+        const row = document.createElement('tr');
+        row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
+        list.appendChild(row);
         }
+
+    table[0].appendChild(list);
     
-    table.appendChild(list);
 }
 
 start.addEventListener('click', showGame);
