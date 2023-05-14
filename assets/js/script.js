@@ -256,6 +256,7 @@ let questions = [
         ]
     }
 ];
+let topPlayers =[];
 
 function showGame(){
     entrance.classList.add('hide');
@@ -331,7 +332,9 @@ function checkAnswer(answer) {
 }
 
 function createList () {
-    const list = 
+    const list = table.createElement('tbody');
+
+
 }
 
 
