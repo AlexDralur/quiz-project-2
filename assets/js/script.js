@@ -333,10 +333,10 @@ function checkAnswer(answer) {
     }, 1000);
 }
 
-function createList () {
+function addUserScore () {
     const list = table.createElement('tbody');
 
-    list.innerHTML = `<tr><td>${user}/td><td>${email}</td></tr>`;
+    list.innerHTML = `<tr><td>${user.value}/td><td>${email.value}</td></tr>`;
 
 }
 
