@@ -8,10 +8,11 @@ const start = document.getElementById('start');
 const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
+const highscores = document.getElementById('highscores');
 const table = document.getElementsByTagName('table');
 const user = document.getElementById('name');
 const email = document.getElementById('email');
-cconst submitScore = document.getElementById('submit-score');
+const submitScore = document.getElementById('submit-score');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -334,11 +335,19 @@ function checkAnswer(answer) {
     }, 1000);
 }
 
+function seeScores(){
+    entrance.classList.add('hide');
+    highscores.classList.remove('hide');
+    startGame();
+}
+
 function createListScores(){
 
 }
 
-function addUserScore () {
+function addUserScore (event) {
+    event.preventDefault();
+
     let newScore = {
         'name': user.value,
         'email': email.value
@@ -349,10 +358,17 @@ function addUserScore () {
 
     const list = table.createElement('tbody');
 
-    list.innerHTML = `<tr><td>${user.value}/td><td>${email.value}</td></tr>`;
+    for(player in topPlayers){
+        list.innerHTML = `<tr><td>${player.name}/td><td>${score}</td></tr>`;
+        }
+
+    
+    
 
 }
 
 
 start.addEventListener('click', showGame);
+checkScores.addEventListener('click', seeScores);
 submitScore.addEventListener('submit', addUserScore);
+
