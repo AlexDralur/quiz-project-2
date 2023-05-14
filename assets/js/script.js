@@ -361,6 +361,10 @@ function addUserScore (event) {
 
     topPlayers.push(newScore);
 
+    topPlayers.sort(function(a,b)){
+        return b.score - a.score;
+    };
+
     console.log(topPlayers);
 
     // const list = table.createElement('tbody');
