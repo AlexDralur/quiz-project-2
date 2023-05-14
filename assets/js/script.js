@@ -12,6 +12,7 @@ const highscores = document.getElementById('highscores');
 const table = document.getElementsByTagName('table');
 const user = document.getElementById('name');
 const email = document.getElementById('email');
+const finalScore = document.getElementById('final-score');
 const submitScore = document.getElementById('submit-score');
 
 let currentQuestion = {};
@@ -330,6 +331,7 @@ function checkAnswer(answer) {
         if (questionCounter <= 10) {
             runGame();
         } else {
+            localStorage.setItem('mostRecentScore', score);
             endGame();
         }
     }, 1000);
@@ -344,6 +346,8 @@ function seeScores(){
 function endGame(){
     gameplay.classList.add('hide');
     highscores.classList.remove('hide');
+    let mostRecentScore = localStorage.getItem('mostRecentScore');
+    finalScore.innerHTML = mostRecentScore;
 }
 
 function addUserScore (event) {
@@ -354,6 +358,7 @@ function addUserScore (event) {
     }
 
     topPlayers.push(newScore);
+    console.log(newScore);
 
 
     const list = table.createElement('tbody');
@@ -368,6 +373,9 @@ function addUserScore (event) {
 
 }
 
+user.addEventListener('keyup', function(){
+    console.log(user.value);
+});
 
 start.addEventListener('click', showGame);
 checkScores.addEventListener('click', seeScores);
