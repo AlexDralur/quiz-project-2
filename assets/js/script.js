@@ -369,16 +369,13 @@ function addUserScore (event) {
     topPlayers.splice(5);
     localStorage.setItem('highScores', JSON.stringify(topPlayers));
 
-    // const list = table.createElement('tbody');
+    const list = document.createElement('tbody');
 
-    // for(player in topPlayers){
-    //     list.innerHTML = `<tr><td>${player.name}/td><td>${score}</td></tr>`;
-    //     }
-
-    // event.preventDefault();
-
+    for(player in topPlayers){
+        list.innerHTML = `<tr><td>${player.name}/td><td>${player.score}</td></tr>`;
+        }
     
-
+    table.appendChild(list);
 }
 
 start.addEventListener('click', showGame);
