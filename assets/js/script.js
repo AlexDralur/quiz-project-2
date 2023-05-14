@@ -330,7 +330,7 @@ function checkAnswer(answer) {
         if (questionCounter <= 10) {
             runGame();
         } else {
-
+            endGame();
         }
     }, 1000);
 }
@@ -341,16 +341,16 @@ function seeScores(){
     startGame();
 }
 
-function createListScores(){
-
+function endGame(){
+    gameplay.classList.add('hide');
+    highscores.classList.remove('hide');
 }
 
 function addUserScore (event) {
-    event.preventDefault();
-
     let newScore = {
         'name': user.value,
-        'email': email.value
+        'email': email.value,
+        'score': score
     }
 
     topPlayers.push(newScore);
@@ -362,7 +362,8 @@ function addUserScore (event) {
         list.innerHTML = `<tr><td>${player.name}/td><td>${score}</td></tr>`;
         }
 
-    
+    event.preventDefault();
+
     
 
 }
