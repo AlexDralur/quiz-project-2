@@ -9,7 +9,7 @@ const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
 const table = document.getElementsByTagName('table');
-const name = document.getElementById('name');
+const user = document.getElementById('name');
 const email = document.getElementById('email');
 
 let currentQuestion = {};
@@ -336,7 +336,7 @@ function checkAnswer(answer) {
 function createList () {
     const list = table.createElement('tbody');
 
-    list.innerHTML = '<tr><td></td><td></td></tr>';
+    list.innerHTML = `<tr><td>${user}/td><td>${email}</td></tr>`;
 
 }
 
