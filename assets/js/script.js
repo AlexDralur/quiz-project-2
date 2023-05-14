@@ -334,6 +334,7 @@ function checkAnswer(answer) {
 function createList () {
     const list = table.createElement('tbody');
 
+    list.innerHTML = '<tr><td></td><td></td></tr>';
 
 }
 
