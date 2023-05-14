@@ -362,11 +362,12 @@ function addUserScore (event) {
 
     topPlayers.push(newScore);
 
-    topPlayers.sort(function(a,b)){
+    topPlayers.sort(function(a, b){
         return b.score - a.score;
-    };
+    });
 
-    console.log(topPlayers);
+    topPlayers.splice(5);
+    localStorage.setItem('highScores', JSON.stringify(topPlayers));
 
     // const list = table.createElement('tbody');
 
