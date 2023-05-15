@@ -139,3 +139,10 @@ body{
 .incorrect {
     background-color: #ff5400;
 }
+
+/* HIGHSCORES */
+
+#congratulations-text {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
