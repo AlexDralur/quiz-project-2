@@ -140,7 +140,7 @@ body{
     background-color: #ff5400;
 }
 
-/* HIGHSCORES */
+/* HIGHSCORES SECTION - END GAME */
 
 #congratulations-text {
     font-size: 3rem;
@@ -158,16 +158,34 @@ body{
 
 .register-text {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
 }
 
 #submit-score{
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 input {
     color: #7E8287;
     margin: 0.5rem auto 2rem;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+}
+
+/* HIGHSCORES SECTION - TOPSCORES */
+
+.topscores{
+    font-size: 2rem;
+    width: 50rem;
+    text-align: center;
+    padding: auto 10rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+th,td{
+    padding: 0.5rem 5rem;
 }
