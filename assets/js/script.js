@@ -14,6 +14,8 @@ const user = document.getElementById('name');
 const email = document.getElementById('email');
 const finalScore = document.getElementById('final-score');
 const submitScore = document.getElementById('submit-score');
+const scoresTable = document.getElementById('scores-table');
+const congratulations = document.getElementById('congratulations');
 
 let currentQuestion = {};
 let acceptingAnswers = true;
