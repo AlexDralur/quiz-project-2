@@ -212,5 +212,14 @@ th,td{
 
 @media screen and (min-width: 1025px){
         /* GAME ENTRANCE */
+    
+    .container {
+        flex-direction: column;
+    }
 
+    #buttons {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5rem;
+    }
 }
