@@ -205,19 +205,7 @@ th,td{
 
     /* GAME */
 
-    /* #game {
+    .tablet-view{
         flex-direction: row;
     }
-
-    #hud{
-        
-    }
-
-    #question{
-        float: left;
-    }
-
-    .choice-container{
-        float: right;
-    } */
 }
