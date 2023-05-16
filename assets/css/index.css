@@ -83,7 +83,7 @@ body{
     background-color: #000;
 }
 
-/* GAME */
+/* GAMEPLAY */
 
 /* HUD */
 
@@ -203,7 +203,7 @@ th,td{
         flex-direction: column;
     }
 
-    /* GAME */
+    /* GAMEPLAY */
 
     .tablet-view{
         flex-direction: row;
@@ -221,5 +221,24 @@ th,td{
         flex-direction: row;
         justify-content: space-around;
         margin-top: 5rem;
+    }
+
+    /* GAMEPLAY */
+    
+    .tablet-view{
+        flex-direction: column;
+    }
+
+    .choices {
+        display: flex;
+        flex-direction: row;
+    }
+    .choice-container {
+        margin-right: 2rem;
+    }
+    
+    .desktop-view {
+        display: flex;
+        flex-direction: row;
     }
 }
