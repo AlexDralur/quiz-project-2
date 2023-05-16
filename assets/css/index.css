@@ -191,7 +191,7 @@ th,td{
 }
 
 @media screen and (min-width: 801px){
-    /* GAME ENTRANCE PAGE */
+    /* GAME ENTRANCE */
 
     .container {
         flex-direction: row;
@@ -208,4 +208,9 @@ th,td{
     .tablet-view{
         flex-direction: row;
     }
+}
+
+@media screen and (min-width: 1025px){
+        /* GAME ENTRANCE */
+
 }
