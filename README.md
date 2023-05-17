@@ -39,17 +39,16 @@ The 'So, You Think You Know?' website was created to provide a fun entertaiment 
 * As a user, I want to have fun.
 * As a user, I want the website to be fast and provide me with questions quickly.
 * As a user, I want to know if my answer was the correct one or not.
-* As a user, I want to reach out and contact the business
+* As a user, I want to know how good I am in comparison to other players.
 ​
 ### **Site Aims:**
-* To provide an trustworthy veterinarians in Cork with over 10 years in business.
-* To inform which type of services Honeypaw offers.
-* To inform where the users can find us.
-* To offer the user an oppertunity to get in contact.
+* To provide a fun interactive game.
+* To create a challenge for the user and the players.
+* Light and easily accessed by anyone anywhere.
 ​
 ### **Color Scheme:**
 ​
-The objective of the colors of the site was to bring some joy to the user. Pets are always related to happiness, so (#3B3561) was used for the main backgrounds and (#59B3B3) was used for the the text and social media icons. Variations of the colors were used to provide better accessibility. The two cases are: the h2 in the about us section (#4D9B9B) and the color of the text inside the spans (#51A3A3).
+The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287). It gives the website a sobriety and style and also do not distract the user from the questions and the available. The only two other colors that vary from that are the colors green (#4F9D69) and red (#ff5400), to show to the user if they have chosen the correct or wrong answers, respectively.
 ​
 ## **Typography**
 ​
