@@ -189,6 +189,7 @@ You  can find the live site via the following URL - [live webpage](https://alexd
 ## **Tech**
 - HTML
 - CSS
+- Javascript
 ​
 ## **Credits**
 ### **Honorable mentions**
@@ -203,16 +204,5 @@ You  can find the live site via the following URL - [live webpage](https://alexd
   
 ### **Media:**
 ​
-Hero-image: <a href="https://www.freepik.com/free-psd/group-portrait-adorable-puppies_3730286.htm#query=PETS&position=3&from_view=search&track=sph">Image by rawpixel.com</a> on Freepik
-
-Services images:
-
-. <a href="https://www.freepik.com/free-photo/happy-female-vet-smiling-petting-beautiful-beagle-dog-exam-table-professional-veterinarian-man-holding-pet-while-examining-healthy-pet-clinic_27999717.htm#query=veterinary&position=0&from_view=search&track=sph">Image by tonodiaz</a> on Freepik
-
-. Image by <a href="https://www.freepik.com/free-photo/side-view-woman-washing-dog_31231627.htm#query=dog%20bath&position=43&from_view=search&track=ais">Freepik</a>
-
-. <a href="https://www.freepik.com/free-photo/haircuting-process-small-dog-sits-table-dog-with-professional_17066326.htm#query=dog%20grooming&position=4&from_view=search&track=ais">Image by prostooleh</a> on Freepik
-
-. <a href="https://www.freepik.com/free-photo/dog-bed-morning_6978017.htm#query=hotel%20dog&position=26&from_view=search&track=ais">Image by Racool_studio</a> on Freepik
-
-Contact us image: <a href="https://www.freepik.com/free-vector/abstract-pattern-design_1049012.htm#query=pet%20patterny&position=0&from_view=search&track=ais">Image by flatart</a> on Freepiks
+Background image: <a href="https://www.freepik.com/free-vector/mystery-confusion-question-mark-background-liquid-style_38091790.htm#page=3&query=quiz%20pattern&position=15&from_view=search&track=ais">Image by starline</a> on Freepik
+ 
