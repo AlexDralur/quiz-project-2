@@ -140,10 +140,13 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 * Validators
 
 . HTML [W3C HTML Validator](https://validator.w3.org/)
-![W3C HTML Validator screenshot](assets/docs/images/w3c-html-validator.png)
+![W3C HTML Validator screenshot]()
 
 . CSS - [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
-​![Jigsaw CSS Validator screenshot](assets/docs/images/w3c-css-validator.png)
+​![Jigsaw CSS Validator screenshot](assets/images-docs/sytyk_css_validator.png)
+
+. Javascript - [JSHint Validator](https://jshint.com/)
+​![JSHint Validator screenshot]()
 
 . Google Lighthouse
 ​![Google Lighthouse screenshot](assets/images-docs/sytyk_lighthouse.png)
