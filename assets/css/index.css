@@ -183,7 +183,7 @@ input {
     font-size: 2rem;
     width: 50rem;
     text-align: center;
-    padding: auto 10rem;
+    padding: 1rem 10rem;
     display: flex;
     justify-content: space-around;
 }
