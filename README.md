@@ -178,12 +178,12 @@ Resolution✅: Colors of the texts were slightly changed.
 ## **Deployment**
 I deployed the page on GitHub pages via the following procedure: -
 ​
-1. From the project's [repository](https://github.com/AlexDralur/honeypaw), go to the **Settings** tab.
+1. From the project's [repository](https://github.com/AlexDralur/quiz-project-2), go to the **Settings** tab.
 2. From the left-hand menu, select the **Pages** tab.
 3. Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 4. A message will be displayed to indicate a successful deployment to GitHub pages and provide the live link.
 ​
-You  can find the live site via the following URL - [live webpage](https://alexdralur.github.io/honeypaw/)
+You  can find the live site via the following URL - [live webpage](https://alexdralur.github.io/quiz-project-2/)
 ***
 ​
 ## **Tech**
