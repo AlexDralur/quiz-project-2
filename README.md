@@ -146,7 +146,7 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 ​![Jigsaw CSS Validator screenshot](assets/docs/images/w3c-css-validator.png)
 
 . Google Lighthouse
-​![Google Lighthouse screenshot](assets/docs/images/lighthouse-screenshot.png)
+​![Google Lighthouse screenshot](assets/images-docs/sytyk_lighthouse.png)
 ​
 ## **Bugs**
 
