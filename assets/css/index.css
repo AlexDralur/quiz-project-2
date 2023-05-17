@@ -28,6 +28,9 @@ body{
 
 /* ENTRANCE PAGE */
 
+#logo {
+    text-align: center;
+}
 
 .container {
     width: 100vw;
