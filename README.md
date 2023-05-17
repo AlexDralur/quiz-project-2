@@ -53,8 +53,8 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 ## **Typography**
 ​
 * Throughout the page, there are two fonts used:
-  * Rubik - For the logo. It gives a strong image, however, does not seems distant or impersonal.
-  * Poppins - For all the other text in the website.
+  * Josefin Sans - For the logo. It gives a slim image without distancing the website from the user.
+  * Mukta - For all the other text in the website.
 ​
 * Both fonts were used to complement eachother. They provide clean visuals regardless of the screensize.
 * All fonts were sourced from Google fonts, as stated in the credits.
