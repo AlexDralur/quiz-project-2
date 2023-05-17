@@ -102,11 +102,11 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 
 * After the user fills out the form and press send, they are taken to the thank you where they are informed that the message has been sent to the company and that it will be checked in due time.
 
-![Thank You screenshot](assets/docs/images/thankyou-screenshot.png)
+![Thank You screenshot]()
 ​
 ## **Future-Enhancements**
 ​
-* Since, at this point, I do not have knowledge in Javascript, the form is not functional, other than redirecting the user to the thank you page. My intention is to return to the project and add the funcionality to this area of the page.
+* The website uses a small base of questions to randomly present to the user. After futher study of Javascript, the funcionality of fetch can be added to the code to collect from a source a bigger availability of questions.
 ​
 ## **Testing Phase**
 ​
