@@ -364,6 +364,7 @@ function checkAnswer(answer) {
 function seeScores(){
     entrance.classList.add('hide');
     highscores.classList.remove('hide');
+    congratulations.classList.add('hide-child');
     populateScores();
     startGame();
 }
@@ -374,6 +375,7 @@ function seeScores(){
 function endGame(){
     gameplay.classList.add('hide');
     highscores.classList.remove('hide');
+    congratulations.classList.remove('hide-child');
     populateScores();
     let mostRecentScore = localStorage.getItem('mostRecentScore');
     finalScore.innerHTML = mostRecentScore;

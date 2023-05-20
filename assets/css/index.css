@@ -194,6 +194,10 @@ th,td{
     padding: 0.5rem 5rem;
 }
 
+.hide-child{
+    display: none;
+}
+
 @media screen and (min-width: 801px){
     /* GAME ENTRANCE */
 
