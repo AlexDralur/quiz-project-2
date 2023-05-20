@@ -22,12 +22,12 @@
                     <h1>So, you think you know?</h1>
                 </div>
                 <!-- Play and Highscores Buttons -->
-                <section>
+                <div class="btns-entrance">
                     <div id="buttons" class="flex-column">
                         <button class="btn" id="start">Play Game</button>
                         <button class="btn" id="checkscores">Check Highscores</button>
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     </header>
@@ -36,45 +36,45 @@
     <section id="gameplay" class="hide">
         <div class="container">
             <div id="game" class="flex-column">
-                    <div id="hud">
-                <div id="hud-progress">
-                    <p id="progressText" class="hud-prefix">
-                    </p>
-                    <div id="progressBar">
-                        <div id="progressBarFull"></div>
+                <div id="hud">
+                    <div id="hud-progress">
+                        <p id="progressText" class="hud-prefix">
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
                     </div>
-                </div>
-                <div id="hud-container" class="flex-column">
-                    <div id="hud">
-                        <div id="hud-score">
-                            <p class="hud-prefix">
-                                Score
-                            </p>
-                            <p class="hud-main-text" id="score">0</p>
+                    <div id="hud-container" class="flex-column">
+                        <div id="score-view">
+                            <div id="hud-score">
+                                <p class="hud-prefix">
+                                    Score
+                                </p>
+                                <p class="hud-main-text" id="score">0</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <h2 id="question">Question</h2>
+                <div class="choices">
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p class="choice-text">choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p class="choice-text">choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p class="choice-text">choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p class="choice-text">choice 4</p>
+                    </div>
+                </div>
             </div>
-            <h2 id="question"></h2>
-            <div class="choices">
-                <div class="choice-container">
-                    <p class="choice-prefix">A</p>
-                    <p class="choice-text">choice 1</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">B</p>
-                    <p class="choice-text">choice 2</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">C</p>
-                    <p class="choice-text">choice 3</p>
-                </div>
-                <div class="choice-container">
-                    <p class="choice-prefix">D</p>
-                    <p class="choice-text">choice 4</p>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -85,7 +85,7 @@
                 <h2 id="congratulations-text">Congratulations</h2>
                 <p class="score-text">You scored <span id="final-score"></span> points.</p>
                 <p class="register-text">Register your score:</p>
-                <form action="" method="post" id="submit-score">
+                <form action="self" method="post" id="submit-score">
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name">
                     <label for="email">Email:</label>
@@ -107,7 +107,7 @@
                 </fieldset>
             </div>
             <!-- Play Button -->
-            <div id="buttons" class="flex-column">
+            <div class="flex-column">
                 <button class="btn" id="start-highscores">Play Game</button>
             </div>
         </div>
