@@ -9,7 +9,7 @@ const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
 const highscores = document.getElementById('highscores');
-const table = document.getElementsByTagName('table');
+const table = document.querySelector('table');
 const user = document.getElementById('name');
 const email = document.getElementById('email');
 const finalScore = document.getElementById('final-score');
@@ -343,12 +343,14 @@ function checkAnswer(answer) {
 function seeScores(){
     entrance.classList.add('hide');
     highscores.classList.remove('hide');
+    populateScores();
     startGame();
 }
 
 function endGame(){
     gameplay.classList.add('hide');
     highscores.classList.remove('hide');
+    populateScores();
     let mostRecentScore = localStorage.getItem('mostRecentScore');
     finalScore.innerHTML = mostRecentScore;
 }
@@ -373,15 +375,43 @@ function addUserScore (event) {
 
     const list = document.createElement('tbody');
 
+    table.innerHTML ="";
+
+
     for(let player of topPlayers){
         const row = document.createElement('tr');
         row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
         list.appendChild(row);
         }
 
-    table[0].appendChild(list);
+    table.appendChild(list);
     
 }
+
+function populateScores(){
+    const list = document.createElement('tbody');
+
+    if (topPlayers.length > 0) {
+        for (let player of topPlayers){
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
+            list.appendChild(row);
+        }
+    } else {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td colspan='2'>No scores yet!</td>`;
+            list.appendChild(row);
+        }
+
+
+    while (table.firstChild) {
+        table.firstChild.remove();
+    }
+
+    table.appendChild(list);
+}
+
+
 
 start.addEventListener('click', showGame);
 checkScores.addEventListener('click', seeScores);
