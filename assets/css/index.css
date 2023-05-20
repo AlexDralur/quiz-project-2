@@ -171,6 +171,10 @@ body{
     font-size: 1.8rem;
 }
 
+#start-highscores {
+    margin-top: 5rem;;
+}
+
 input {
     color: #7E8287;
     margin: 0.5rem auto 2rem;
@@ -202,7 +206,6 @@ th,td{
     /* GAME ENTRANCE */
 
     .container {
-        flex-direction: row;
         width: 100%;
         max-width: none;
     }

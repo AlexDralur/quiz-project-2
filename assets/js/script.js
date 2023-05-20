@@ -302,7 +302,7 @@ function runGame() {
 
     answers = shuffleArray(answers);
 
-    for (i = 0; i < choices.length; i++) {
+    for (let i = 0; i < choices.length; i++) {
         choices[i].innerHTML = answers[i];
     }
 
