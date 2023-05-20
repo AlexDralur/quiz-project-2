@@ -5,6 +5,7 @@ const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
 const start = document.getElementById('start');
+const startHighscores = document.getElementById('start-highscores');
 const checkScores = document.getElementById('checkscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
@@ -414,6 +415,7 @@ function populateScores(){
 
 
 start.addEventListener('click', showGame);
+startHighscores.addEventListener('click', showGame);
 checkScores.addEventListener('click', seeScores);
 submitScore.addEventListener('submit', addUserScore);
 
