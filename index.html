@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="So, you think you know? is a page where you can test your knowledge and play with friends to know which one knows best.">
+    <meta name="description"
+        content="So, you think you know? is a page where you can test your knowledge and play with friends to know which one knows best.">
     <meta name="keywords" content="quiz game, quiz, general knowledge, multiple choice game">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>So, you think you know?</title>
@@ -33,48 +34,48 @@
 
     <!-- GAME STRUCTURE -->
     <section id="gameplay" class="hide">
-            <div class="container">
-                <div id="game" class="flex-column>
-                    <div id="hud">
-                        <div id="hud-progress">
-                            <p id="progressText" class="hud-prefix">
-                            </p>
-                            <div id="progressBar">
-                                <div id="progressBarFull"></div>
-                            </div>
-                        </div>
-                        <div id="hud-container" class="flex-column">
-                            <div id="hud">
-                                <div id="hud-score">
-                                    <p class="hud-prefix">
-                                        Score
-                                    </p>
-                                    <p class="hud-main-text" id="score">0</p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+            <div id="game" class="flex-column>
+                    <div id=" hud">
+                <div id="hud-progress">
+                    <p id="progressText" class="hud-prefix">
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
                     </div>
-                    <h2 id="question"></h2>
-                    <div class="choices">
-                        <div class="choice-container">
-                            <p class="choice-prefix">A</p>
-                            <p class="choice-text">choice 1</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">B</p>
-                            <p class="choice-text">choice 2</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">C</p>
-                            <p class="choice-text">choice 3</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">D</p>
-                            <p class="choice-text">choice 4</p>
+                </div>
+                <div id="hud-container" class="flex-column">
+                    <div id="hud">
+                        <div id="hud-score">
+                            <p class="hud-prefix">
+                                Score
+                            </p>
+                            <p class="hud-main-text" id="score">0</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <h2 id="question"></h2>
+            <div class="choices">
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text">choice 1</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text">choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text">choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text">choice 4</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
 
     <!-- HIGHSCORES SECTION -->
@@ -104,6 +105,10 @@
                         </thead>
                     </table>
                 </fieldset>
+            </div>
+            <!-- Play Button -->
+            <div id="buttons" class="flex-column">
+                <button class="btn" id="start">Play Game</button>
             </div>
         </div>
     </section>
