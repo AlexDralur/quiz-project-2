@@ -1,21 +1,21 @@
-const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const choiceOptions = document.getElementsByClassName('choice-container');
-const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById('progressBarFull');
-const start = document.getElementById('start');
 const startHighscores = document.getElementById('start-highscores');
+const congratulations = document.getElementById('congratulations');
+const progressBarFull = document.getElementById('progressBarFull');
+const progressText = document.getElementById('progressText');
+const submitScore = document.getElementById('submit-score');
 const checkScores = document.getElementById('checkscores');
+const finalScore = document.getElementById('final-score');
+const highscores = document.getElementById('highscores');
 const entrance = document.getElementById('entrance');
 const gameplay = document.getElementById('gameplay');
-const highscores = document.getElementById('highscores');
+const question = document.getElementById('question');
+const scoreText = document.getElementById('score');
+const email = document.getElementById('email');
+const start = document.getElementById('start');
 const table = document.querySelector('table');
 const user = document.getElementById('name');
-const email = document.getElementById('email');
-const finalScore = document.getElementById('final-score');
-const submitScore = document.getElementById('submit-score');
-const congratulations = document.getElementById('congratulations');
 
 let currentQuestion = {};
 let score = 0;
@@ -304,7 +304,7 @@ function runGame() {
     }
 
     questions.splice(index, 1);
-};
+}
 
 /**
  * Fisher Yates Shuffle used to make the right answer to show randomly in one of the four options avaliable
@@ -323,7 +323,7 @@ for (let button of choiceOptions) {
     button.addEventListener('click', function() {
         let selectedAnswer = this.querySelector('.choice-text').innerHTML;
         checkAnswer(selectedAnswer);
-    })
+    });
 }
 
 /**
@@ -389,7 +389,7 @@ function addUserScore (event) {
         'name': user.value,
         'email': email.value,
         'score': finalScore.textContent
-    }
+    };
 
     topPlayers.push(newScore);
 
