@@ -267,17 +267,26 @@ let questions = [
 let topPlayers = JSON.parse(localStorage.getItem('highScores')) || [];
 const maxTopPlayers = 5;
 
+/**
+ * Show the gameplay when user clicks on button
+ */
 function showGame(){
     entrance.classList.add('hide');
     gameplay.classList.remove('hide');
     startGame();
 }
 
+/**
+ * Structure the game when the user starts the game
+ */
 function startGame() {
     progressText.textContent = `Question ${questionCounter}/10`;
     runGame();
 }
 
+/**
+ * Populates the game with a random question and its options
+ */
 function runGame() {
     scoreText.textContent = `${score}`;
     progressText.textContent = `Question ${questionCounter}/10`;
@@ -300,7 +309,11 @@ function runGame() {
     questions.splice(index, 1);
 };
 
-// Fisher Yates Shuffle
+/**
+ * Fisher Yates Shuffle used to make the right answer to show randomly in one of the four options avaliable
+ * @param {array} array 
+ * @returns array
+ */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -316,6 +329,10 @@ for (let button of choiceOptions) {
     })
 }
 
+/**
+ * Checks if the choice chosen by the user is the correct one or not and adds a class to show to the user if the answer was the correct one
+ * @param {answer} answer 
+ */
 function checkAnswer(answer) {
     const selectedChoice = Array.from(choiceOptions).find(function(option) {
         return option.querySelector('.choice-text').innerHTML === answer;
@@ -341,6 +358,9 @@ function checkAnswer(answer) {
     }, 1000);
 }
 
+/**
+ * Takes the user to the highscores part of the page if the user clicks on button
+ */
 function seeScores(){
     entrance.classList.add('hide');
     highscores.classList.remove('hide');
@@ -348,6 +368,9 @@ function seeScores(){
     startGame();
 }
 
+/**
+ * When user answer 10 random questions, they are taken to the highscores part of the page
+ */
 function endGame(){
     gameplay.classList.add('hide');
     highscores.classList.remove('hide');
@@ -356,6 +379,10 @@ function endGame(){
     finalScore.innerHTML = mostRecentScore;
 }
 
+/**
+ * Structure to allow the user to push their score to the topscores table, if they are on the top five
+ * @param {event} event 
+ */
 function addUserScore (event) {
     event.preventDefault();
 
@@ -389,6 +416,10 @@ function addUserScore (event) {
     
 }
 
+
+/**
+ * Provides content to the table even if there are no scores
+ */
 function populateScores(){
     const list = document.createElement('tbody');
 
