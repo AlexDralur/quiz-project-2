@@ -67,16 +67,15 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 
 #### *Game:*
 
-* There are two parts to the About Us section: a hero image and a text description about Honeypaw.
-* The hero image also has a text that appears on top of the image.
+* The game is divided in three different parts: the hud, where it shows how many questions have been answered until that point and the amount of points; the question; and the four different available answers.
+* When a user chooses one of the answers, the background changes to inform the user if they got it right or wrong, with a green or red color, respectively.
 
 ![Game screenshot](assets/images-docs/sytyk_game_screenshot.png)
 
 #### *Congratulations and Topscores:*
 
-* There are four main services in Honeypaw: veterinary appointments, bath, grooming and the hotel.
-* Each one of them has specific working hours.
-* When viewed on tablet screens or higher, each service has a hover effect that only shows the days/hours when the mouse hover each one.
+* This page can be accessed on the entrance of the game or after the user answers ten questions. If it is accessed without playing the game, the page only shows to the user the topscores and the "Play Game" button. If they finish the game, they are greeted with a congratulations message, their score and the possibility of registering the score.
+* The registration requires a name and email. The same user is allowed to play more than once and register their score.
 
 ![Topscores with no congratulations screenshot](assets/images-docs/sytyk_topscores_no_congratulations_screenshot.png)
 ![Congratulations and Topscores screenshot](assets/images-docs/sytyk_topscores_with_congratulations_screenshot.png)
