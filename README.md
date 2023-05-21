@@ -2,7 +2,7 @@
 ## **Site Overview**
 The 'So, You Think You Know?' website was created to provide a fun entertaiment for whoever would like to test if they have the knowledge on the questions being put on the website. The objective is to offer four differents options of answers so that the user can choose the correct one. By the end, they can upload their score to the Top Scores table. If they are one of the top five, their score will be shown. 
 
-![Am I responsive screenshot]()
+![Am I responsive screenshot](assets/images-docs/sytyk_responsive.png)
 ​
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
