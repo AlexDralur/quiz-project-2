@@ -135,23 +135,29 @@ Cause🛠: The parent div was losing its class which was the one hiding it.
 
 Resolution✅: Add another class only to the child div to allow to disappear while the parent appeared.
 *** 
-Problem 🐞: Page taking too long to load and impacting the performance.
+Problem 🐞: Topplayers did not appear when page was accessed.
 
-Cause🛠: The original image files were too large.
+Cause🛠: The wrong type of for loop was being used.
 
-Resolution✅: Images were compressed and the size reduced.​
+Resolution✅: Changed to the "of" type of for loop.​
 ***
-Problem 🐞: Services headings unreadable.
+Problem 🐞: Sore was not changing while playing the game.
 
-Cause🛠: The background images are composed from different elements and colors.
+Cause🛠: The score was not added to the runGame function.
 
-Resolution✅: An span was added on the headings to provide a background color.
+Resolution✅: Added to the correct function.
 ***
-Problem 🐞: Low score on Google Lighthouse.
+Problem 🐞: Choices were not being removed from the pool available after being used.
 
-Cause🛠: Headers on the about us and services sections unreadable.
+Cause🛠: The wrong type of method was being applied.
 
-Resolution✅: Colors of the texts were slightly changed.
+Resolution✅: Changed to the correct method.
+***
+Problem 🐞: Answers were not aligned if they were too long.
+
+Cause🛠: The CSS for the choices was not 100% configurated.
+
+Resolution✅: Added further styles.
 ***
 
 ## **Deployment**
