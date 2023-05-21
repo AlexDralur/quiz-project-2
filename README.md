@@ -13,12 +13,9 @@ The 'So, You Think You Know?' website was created to provide a fun entertaiment 
     * [***Color Scheme***](#color-scheme)
     * [***Typography***](#typography)
 1. [**Current Features**](#current-features)
-    * [***Header Element***](#header-element)
-    * [***About Us***](#about-us)   
-    * [***Services***](#services)
-    * [***Contact Us***](#services)
-    * [***Footer***](#footer)
-    * [***Thank You***](#thankyou)
+    * [***Game Entrance***](#game-entrance)
+    * [***Game***](#game)   
+    * [***Congratulations and Topscores***](#congratulations-and-topscores)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -61,48 +58,29 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 ​
 ## **Current Features**
 ​
-#### *Navigation Bar:*
+#### *Entrance:*
 
-* The navigation bar is divided in two sections: the logo and the areas of the page.
-* Each area, when hovered, changes color to provide clarity that it will bring the user to that section.
-* Due to the conciseness of the website, there was no necessity of changing the structure of the header depending on the screen size.
+* This part of the page is divided in two parts: the name/logo of the page and the buttons, to access either the game itself or the topscores table.
+* There is only one change when accessed on bigsreens, where the buttons change the column direction to a row one.
 
-![Navigation Bar screenshot](assets/docs/images/navigation-bar-screenshot.png)
+![Entrance screenshot](assets/images-docs/sytyk_entrance_screenshot.png)
 
-#### *About Us:*
+#### *Game:*
 
 * There are two parts to the About Us section: a hero image and a text description about Honeypaw.
 * The hero image also has a text that appears on top of the image.
 
-![About Us screenshot](assets/docs/images/about-us-section-screenshot.png)
+![Game screenshot](assets/images-docs/sytyk_game_screenshot.png)
 
-#### *Services:*
+#### *Congratulations and Topscores:*
 
 * There are four main services in Honeypaw: veterinary appointments, bath, grooming and the hotel.
 * Each one of them has specific working hours.
 * When viewed on tablet screens or higher, each service has a hover effect that only shows the days/hours when the mouse hover each one.
 
-![Services screenshot](assets/docs/images/services-section-screenshot.png)
+![Topscores with no congratulations screenshot](assets/images-docs/sytyk_topscores_no_congratulations_screenshot.png)
+![Congratulations and Topscores screenshot](assets/images-docs/sytyk_topscores_with_congratulations_screenshot.png)
 
-#### *Contact Us:*
-
-* The contact us section is divided in two mini-sections: a form and a Google Maps iframe.
-* On the form, the users can send their queries about each one of the services provided, or other if it is beyond that. They must provide a valid email and they must fill out the name and textarea to be able to send the message.
-* On the iframe it is displayed the location of the Douglas Shopping Centre and right above it there is the typed details.
-
-![Contact Us screenshot](assets/docs/images/contact-us-section-screenshot.png)
-​
-#### *Footer:*
-
-* The footer has the logos for the main social media plataforms: Facebook, Twitter, Instagram and Youtube, with links that opens new tabs when clicked.
-
-![Footer screenshot](assets/docs/images/footer-screenshot.png)
-
-#### *Thank You:*
-
-* After the user fills out the form and press send, they are taken to the thank you where they are informed that the message has been sent to the company and that it will be checked in due time.
-
-![Thank You screenshot]()
 ​
 ## **Future-Enhancements**
 ​
