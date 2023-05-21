@@ -185,7 +185,7 @@ You  can find the live site via the following URL - [live webpage](https://alexd
 ​
 . Social media icons from footer took from FontAwesome.
 
-. Social media HTML structure took from the Love Running project from Code Institute.
+. Game structure and buttons structure based on Build a Quiz App [tutorial](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF) from James Q Quick.
   
 ### **Media:**
 ​
