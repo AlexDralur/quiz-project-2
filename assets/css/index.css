@@ -73,6 +73,11 @@ body{
 
 
 /* BUTTONS */
+
+#buttons{
+    margin-top: 3rem;
+}
+
 .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
