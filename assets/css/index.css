@@ -187,11 +187,12 @@ input {
 
 .topscores{
     font-size: 2rem;
-    width: 50rem;
+    width: 70vw;
     text-align: center;
-    padding: 1rem 10rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 th,td{
