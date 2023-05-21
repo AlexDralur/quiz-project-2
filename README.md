@@ -110,9 +110,8 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
     No issues were noted upon project completion.
 ​
 * Functionality - 
-    * All the links on the navigation bar redirect to the correct sections of the page in a smooth transition.
-    * Each image of the services section, when hovered on big screens, have an hoover effect.
-    * In the form section, the name, email (inputs) and textarea are required if the user decides to send a message.
+    * All the buttons throughout the areas of the page redirects the user to the relevant section.
+    * The topscores are updated automatically when the user registers their score.
 ​
 * Validators
 
@@ -130,11 +129,11 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
 ​
 ## **Bugs**
 
-Problem 🐞: Text on the hero-image unreadable on big screens.
+Problem 🐞: Congratulations area was appearing when user clicked on "Check Highscores" button.
 
-Cause🛠: The location of the text on big screens was on the white area of the image.
+Cause🛠: The parent div was losing its class which was the one hiding it.
 
-Resolution✅: Another div was added in-between to provide shading when on big screens.
+Resolution✅: Add another class only to the child div to allow to disappear while the parent appeared.
 *** 
 Problem 🐞: Page taking too long to load and impacting the performance.
 
