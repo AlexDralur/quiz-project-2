@@ -1,3 +1,5 @@
+//DOM ELEMENTS
+
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const choiceOptions = document.getElementsByClassName('choice-container');
 const startHighscores = document.getElementById('start-highscores');
@@ -16,6 +18,8 @@ const email = document.getElementById('email');
 const start = document.getElementById('start');
 const table = document.querySelector('table');
 const user = document.getElementById('name');
+
+// GAME VARIABLES
 
 let currentQuestion = {};
 let score = 0;
@@ -264,6 +268,8 @@ let questions = [
 ];
 let topPlayers = JSON.parse(localStorage.getItem('highScores')) || [];
 
+// FUNCTIONS
+
 /**
  * Show the gameplay when user clicks on button
  */
@@ -317,13 +323,6 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
-}
-
-for (let button of choiceOptions) {
-    button.addEventListener('click', function() {
-        let selectedAnswer = this.querySelector('.choice-text').innerHTML;
-        checkAnswer(selectedAnswer);
-    });
 }
 
 /**
@@ -443,9 +442,16 @@ function populateScores(){
 }
 
 
+//EVENT LISTENERS
 
 start.addEventListener('click', showGame);
 startHighscores.addEventListener('click', showGame);
 checkScores.addEventListener('click', seeScores);
 submitScore.addEventListener('submit', addUserScore);
+for (let button of choiceOptions) {
+    button.addEventListener('click', function() {
+        let selectedAnswer = this.querySelector('.choice-text').innerHTML;
+        checkAnswer(selectedAnswer);
+    });
+}
 
