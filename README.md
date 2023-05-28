@@ -114,7 +114,7 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
     * While on game, the user can choose one of the options, the click provides the user with the information if they were correct on their choice (the background color of the option changes to red or green, if wrong or correct, respectively) and also calls the function for another question to be presented.
     * When user answers 10 questions, the final section is presented, with the user score and with the possibility for them to add to the top 5 scores.
     * The user is requested to add their name and email to be able to add the score. The top scores are them updated with the new information, if the score is within the top five.
-    * On the last section, a play game is also displayed, if the user desires to play the game again.
+    * On the last section, a play game is also displayed, if the user desires to play the game again. The games gets rebooted.
 ​
 * Validators
 
@@ -161,6 +161,12 @@ Problem 🐞: Answers were not aligned if they were too long.
 Cause🛠: The CSS for the choices was not 100% configurated.
 
 Resolution✅: Added further styles.
+***
+Problem 🐞: Game did not reboot if the user tried to play again.
+
+Cause🛠: The function startGame did not update the game items.
+
+Resolution✅: Updated the startGame function.
 ***
 
 ## **Deployment**
