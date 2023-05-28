@@ -110,8 +110,11 @@ The colors chosen were white(#fff), black(#000) and variations of grey(#7E8287).
     No issues were noted upon project completion.
 ​
 * Functionality - 
-    * All the buttons throughout the areas of the page redirects the user to the relevant section.
-    * The topscores are updated automatically when the user registers their score.
+    * On entrance of the game, both buttons, when clicked bring the user to the relevant section. Topscores buttons does not shows the congratulations message or the option to add the score.
+    * While on game, the user can choose one of the options, the click provides the user with the information if they were correct on their choice (the background color of the option changes to red or green, if wrong or correct, respectively) and also calls the function for another question to be presented.
+    * When user answers 10 questions, the final section is presented, with the user score and with the possibility for them to add to the top 5 scores.
+    * The user is requested to add their name and email to be able to add the score. The top scores are them updated with the new information, if the score is within the top five.
+    * On the last section, a play game is also displayed, if the user desires to play the game again.
 ​
 * Validators
 
