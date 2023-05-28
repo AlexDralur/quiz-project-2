@@ -267,6 +267,7 @@ let questions = [
     }
 ];
 let topPlayers = JSON.parse(localStorage.getItem('highScores')) || [];
+let originalQuestions = [...questions];
 
 // FUNCTIONS
 
@@ -284,6 +285,9 @@ function showGame(){
  */
 function startGame() {
     progressText.textContent = `Question ${questionCounter}/10`;
+    questionCounter = 1;
+    score = 0;
+    questions = [...originalQuestions];
     runGame();
 }
 
@@ -454,4 +458,3 @@ for (let button of choiceOptions) {
         checkAnswer(selectedAnswer);
     });
 }
-
