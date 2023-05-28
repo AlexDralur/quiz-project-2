@@ -411,7 +411,7 @@ function addUserScore (event) {
         }
 
     table.appendChild(list);
-    
+    congratulations.classList.add('hide-child');
 }
 
 
