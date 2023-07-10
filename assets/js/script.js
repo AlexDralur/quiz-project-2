@@ -390,34 +390,40 @@ function endGame(){
 function addUserScore (event) {
     event.preventDefault();
 
+    errorMessage.innerHTML = "";
+
     let newScore = {
         'name': user.value.trim(),
         'email': email.value.trim(),
         'score': finalScore.textContent
     };
 
-    topPlayers.push(newScore);
+    if (user.value.trim() !== "" and email.value.trim() !== ""){
 
-    topPlayers.sort(function(a, b){
-        return b.score - a.score;
-    });
+        topPlayers.push(newScore);
 
-    topPlayers.splice(5);
-    localStorage.setItem('highScores', JSON.stringify(topPlayers));
-
-    const list = document.createElement('tbody');
-
-    table.innerHTML ="";
-
-
-    for(let player of topPlayers){
-        const row = document.createElement('tr');
-        row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
-        list.appendChild(row);
+        topPlayers.sort(function(a, b){
+            return b.score - a.score;
+        });
+        
+        topPlayers.splice(5);
+        localStorage.setItem('highScores', JSON.stringify(topPlayers));
+        
+        const list = document.createElement('tbody');
+        
+        table.innerHTML ="";
+        
+        for(let player of topPlayers){
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${player.name}</td><td>${player.score}</td>`;
+            list.appendChild(row);
         }
 
-    table.appendChild(list);
-    congratulations.classList.add('hide-child');
+        table.appendChild(list);
+        congratulations.classList.add('hide-child');
+    } else {
+        errorMessage.innerHTML = "Please fill in all fields";
+    }
 }
 
 
