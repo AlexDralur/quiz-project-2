@@ -18,6 +18,7 @@ const email = document.getElementById('email');
 const start = document.getElementById('start');
 const table = document.querySelector('table');
 const user = document.getElementById('name');
+const errorMessage = document.getElementById('errorMessage');
 
 // GAME VARIABLES
 
