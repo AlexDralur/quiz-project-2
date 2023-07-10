@@ -399,7 +399,7 @@ function addUserScore (event) {
         'score': finalScore.textContent
     };
 
-    if (user.value.trim() !== "" and email.value.trim() !== ""){
+    if (user.value.trim() !== "" && email.value.trim() !== "") {
 
         topPlayers.push(newScore);
 
