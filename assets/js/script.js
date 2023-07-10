@@ -352,6 +352,7 @@ function checkAnswer(answer) {
         questionCounter++;
 
         if (questionCounter <= 10) {
+            canPlay = true;
             runGame();
         } else {
             localStorage.setItem('mostRecentScore', score);
