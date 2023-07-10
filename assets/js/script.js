@@ -21,6 +21,7 @@ const user = document.getElementById('name');
 
 // GAME VARIABLES
 
+let canPlay = true;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 1;
@@ -454,7 +455,10 @@ checkScores.addEventListener('click', seeScores);
 submitScore.addEventListener('submit', addUserScore);
 for (let button of choiceOptions) {
     button.addEventListener('click', function() {
-        let selectedAnswer = this.querySelector('.choice-text').innerHTML;
-        checkAnswer(selectedAnswer);
+        if (canPlay){
+            canPlay = false;
+            let selectedAnswer = this.querySelector('.choice-text').innerHTML;
+            checkAnswer(selectedAnswer);
+        }
     });
 }
