@@ -390,8 +390,8 @@ function addUserScore (event) {
     event.preventDefault();
 
     let newScore = {
-        'name': user.value,
-        'email': email.value,
+        'name': user.value.trim(),
+        'email': email.value.trim(),
         'score': finalScore.textContent
     };
 
