@@ -286,6 +286,7 @@ function showGame(){
  * Structure the game when the user starts the game
  */
 function startGame() {
+    canPlay= true;
     progressText.textContent = `Question ${questionCounter}/10`;
     questionCounter = 1;
     score = 0;
@@ -352,7 +353,6 @@ function checkAnswer(answer) {
         questionCounter++;
 
         if (questionCounter <= 10) {
-            canPlay = true;
             runGame();
         } else {
             localStorage.setItem('mostRecentScore', score);
