@@ -208,6 +208,12 @@ th,td{
     display: none;
 }
 
+#errorMessage{
+    color: #ff5400;
+    text-align: center;
+    margin: auto;
+}
+
 @media screen and (min-width: 801px){
     /* GAME ENTRANCE */
 
