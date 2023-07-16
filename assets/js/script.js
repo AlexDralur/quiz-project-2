@@ -424,6 +424,7 @@ function addUserScore (event) {
         table.appendChild(list);
         congratulations.classList.add('hide-child');
     } else {
+        errorMessage.classList.add('error-padding')
         errorMessage.innerHTML = "Please fill in all fields";
     }
 }
