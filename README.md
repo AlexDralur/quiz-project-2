@@ -168,6 +168,18 @@ Cause🛠: The function startGame did not update the game items.
 
 Resolution✅: Updated the startGame function.
 ***
+Problem 🐞: Game allowed user to chose more than one answer.
+
+Cause🛠: Code would not stop running after the user selected an answer.
+
+Resolution✅: Updated the code with a variable that blocks the code when the user selects an answer.
+***
+Problem 🐞: Form allowing inputs with no data.
+
+Cause🛠: The form would not require a name and email to submit.
+
+Resolution✅: Updated the HTML file and also add a check on the javascript code to block any attempts to log scores without name or email.
+***
 
 ## **Deployment**
 I deployed the page on GitHub pages via the following procedure: -
