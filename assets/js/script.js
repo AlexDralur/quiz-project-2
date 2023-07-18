@@ -5,6 +5,7 @@ const choiceOptions = document.getElementsByClassName('choice-container');
 const startHighscores = document.getElementById('start-highscores');
 const congratulations = document.getElementById('congratulations');
 const progressBarFull = document.getElementById('progressBarFull');
+const errorMessage = document.getElementById('errorMessage');
 const progressText = document.getElementById('progressText');
 const submitScore = document.getElementById('submit-score');
 const checkScores = document.getElementById('checkscores');
@@ -18,7 +19,6 @@ const email = document.getElementById('email');
 const start = document.getElementById('start');
 const table = document.querySelector('table');
 const user = document.getElementById('name');
-const errorMessage = document.getElementById('errorMessage');
 
 // GAME VARIABLES
 
